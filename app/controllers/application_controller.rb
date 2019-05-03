@@ -21,9 +21,9 @@ class ApplicationController < Sinatra::Base
   end
 end
 
-  # get '/account'
-  #   erb :account
-  # end
+  get '/account' do
+    erb :account
+  end
 
   get '/logout' do
     session.clear
